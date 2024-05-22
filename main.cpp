@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
       // radial distance to edge of image
       float dist = sqrt( static_cast<float>((row - imWidth/2.0)*(row - imWidth/2.0) + (col - imHeight/2.0)*(col - imHeight/2.0)) ) / max_distance;
 
-      glm::vec3 pixelColor(dist * 155, dist * 155, dist * 155);
+      glm::vec3 pixelColor(dist * 1550, dist * 1550, dist * 1550);
 
       // The origin for indexing the height is in lower left...
       imData[col][row] = png::rgb_pixel(pixelColor[0],pixelColor[1],pixelColor[2] );
